@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		022EB84D29389A0800B8A530 /* NEPQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB84C29389A0800B8A530 /* NEPQuizApp.swift */; };
-		022EB84F29389A0800B8A530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB84E29389A0800B8A530 /* ContentView.swift */; };
 		022EB85129389A0A00B8A530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022EB85029389A0A00B8A530 /* Assets.xcassets */; };
 		022EB85429389A0A00B8A530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022EB85329389A0A00B8A530 /* Preview Assets.xcassets */; };
+		022EB85F2938C53700B8A530 /* GameContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB85E2938C53700B8A530 /* GameContentView.swift */; };
+		022EB8632938CFB200B8A530 /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB8622938CFB200B8A530 /* NameInputView.swift */; };
+		022EB8652938CFCC00B8A530 /* ScoreInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB8642938CFCC00B8A530 /* ScoreInputView.swift */; };
+		022EB8672938CFEB00B8A530 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB8662938CFEB00B8A530 /* ResultView.swift */; };
+		022EB86A2938E1D300B8A530 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB8692938E1D300B8A530 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		022EB84929389A0800B8A530 /* NEPQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEPQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		022EB84C29389A0800B8A530 /* NEPQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEPQuizApp.swift; sourceTree = "<group>"; };
-		022EB84E29389A0800B8A530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		022EB85029389A0A00B8A530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022EB85329389A0A00B8A530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		022EB85E2938C53700B8A530 /* GameContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameContentView.swift; sourceTree = "<group>"; };
+		022EB8622938CFB200B8A530 /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
+		022EB8642938CFCC00B8A530 /* ScoreInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreInputView.swift; sourceTree = "<group>"; };
+		022EB8662938CFEB00B8A530 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		022EB8692938E1D300B8A530 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,8 @@
 		022EB84B29389A0800B8A530 /* NEPQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				022EB85D2938C52C00B8A530 /* Game */,
 				022EB84C29389A0800B8A530 /* NEPQuizApp.swift */,
-				022EB84E29389A0800B8A530 /* ContentView.swift */,
 				022EB85029389A0A00B8A530 /* Assets.xcassets */,
 				022EB85229389A0A00B8A530 /* Preview Content */,
 			);
@@ -65,6 +73,26 @@
 				022EB85329389A0A00B8A530 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		022EB85D2938C52C00B8A530 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				022EB8682938E1C200B8A530 /* ScoreInput */,
+				022EB85E2938C53700B8A530 /* GameContentView.swift */,
+				022EB8622938CFB200B8A530 /* NameInputView.swift */,
+				022EB8662938CFEB00B8A530 /* ResultView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		022EB8682938E1C200B8A530 /* ScoreInput */ = {
+			isa = PBXGroup;
+			children = (
+				022EB8642938CFCC00B8A530 /* ScoreInputView.swift */,
+				022EB8692938E1D300B8A530 /* TimerView.swift */,
+			);
+			path = ScoreInput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				022EB84F29389A0800B8A530 /* ContentView.swift in Sources */,
+				022EB86A2938E1D300B8A530 /* TimerView.swift in Sources */,
 				022EB84D29389A0800B8A530 /* NEPQuizApp.swift in Sources */,
+				022EB85F2938C53700B8A530 /* GameContentView.swift in Sources */,
+				022EB8672938CFEB00B8A530 /* ResultView.swift in Sources */,
+				022EB8652938CFCC00B8A530 /* ScoreInputView.swift in Sources */,
+				022EB8632938CFB200B8A530 /* NameInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

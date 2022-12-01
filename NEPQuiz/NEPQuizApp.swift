@@ -11,7 +11,7 @@ import SwiftUI
 struct NEPQuizApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameContentView()
         }
     }
 }

@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct ResultView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    private static let textElementsPadding: CGFloat = 16
 
-struct ResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultView()
+    let name: String
+    let score: Int
+    let finished: () -> Void
+
+    var body: some View {
+        VStack(spacing: ResultView.textElementsPadding) {
+            if score > 0 {
+                Text("Congratulations \(name) !🎉🎉🎉")
+                    .font(.title)
+            } else {
+                Text("Tomorrow is another day \(name) 😎")
+                    .font(.title)
+            }
+
+            Text("You have a score of \(score) correct answers")
+                .padding(.bottom)
+
+            Button("It was fun! I want to play again", action: finished)
+        }
+        .multilineTextAlignment(.center)
+        .padding()
     }
 }
